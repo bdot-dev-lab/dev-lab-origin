@@ -5,7 +5,7 @@ echo -e "\e[42mVerificando actualizaciones....\e[0m"
 sudo apt-get update
 echo -e "\e[42mVerificando actualizaciones.... FINALIZADO\e[0m"
 echo -e "\e[42mInstalando requisitos previos....\e[0m"
-sudo apt-get install \
+sudo apt-get -y install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -29,15 +29,15 @@ echo -e "\e[42mVerificando actualizaciones OTRA VEZ JEJEJ....\e[0m"
 sudo apt-get update
 echo -e "\e[42mVerificando actualizaciones.... FINALIZADO OTRA VEZ \e[0m"
 echo -e "\e[42mInstalando docker....\e[0m"
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 echo -e "\e[42mInstalando docker....FINALIZADO\e[0m"
 
-echo -e "\e[42mAgragando usuario a grupo de gestion de docker....\e[0m"
+#echo -e "\e[42mAgregando usuario a grupo de gestion de docker....\e[0m"
 
 
-sudo usermod -aG docker $USER
+#sudo usermod -aG docker $USER
 
-echo -e "\e[42mAgragando usuario a grupo de gestion de docker....FINALIZADO\e[0m"
+#echo -e "\e[42mAgregando usuario a grupo de gestion de docker....FINALIZADO\e[0m"
 
 echo -e "\e[101mPOR FAVOR REINICIAR SESSION SSH\e[0m"
 
