@@ -29,7 +29,7 @@ echo -e "\e[42mVerificando actualizaciones OTRA VEZ JEJEJ....\e[0m"
 sudo apt-get update
 echo -e "\e[42mVerificando actualizaciones.... FINALIZADO OTRA VEZ \e[0m"
 echo -e "\e[42mInstalando docker....\e[0m"
-sudo apt-get -y install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose
 echo -e "\e[42mInstalando docker....FINALIZADO\e[0m"
 
 #echo -e "\e[42mAgregando usuario a grupo de gestion de docker....\e[0m"
